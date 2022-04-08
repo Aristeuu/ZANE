@@ -24,12 +24,12 @@
   <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet"> <!-- range slider -->
 
   <!-- font awesome style -->
-  <link href="/css/font-awesome.min.css" rel="stylesheet" />
+  <link href="public/css/font-awesome.min.css" rel="stylesheet" />
 
   <!-- Custom styles for this template -->
-  <link href="/css/style.css" rel="stylesheet" />
+  <link href="public/css/style.css" rel="stylesheet" />
   <!-- responsive style -->
-  <link href="/css/responsive.css" rel="stylesheet" />
+  <link href="public/css/responsive.css" rel="stylesheet" />
 
 </head>
 
@@ -462,11 +462,11 @@
   <!-- footer section -->
 
   <!-- jQery -->
-  <script src="/js/jquery-3.4.1.min.js"></script>
+  <script src="public/js/jquery-3.4.1.min.js"></script>
   <!-- bootstrap js -->
-  <script src="/js/bootstrap.js"></script>
+  <script src="public/js/bootstrap.js"></script>
   <!-- custom js -->
-  <script src="/js/custom.js"></script>
+  <script src="public/js/custom.js"></script>
 
 
 </body>

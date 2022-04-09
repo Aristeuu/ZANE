@@ -52,7 +52,7 @@
         <div class="col-sm-6 col-lg-4">
           <div class="box">
             <div class="img-box">
-              <img src="images/p2.png" alt="">
+              <img src="public/images/p2.png" alt="">
               <a href="" class="add_cart_btn">
                 <span>
                   Add To Cart
@@ -81,7 +81,7 @@
         <div class="col-sm-6 col-lg-4">
           <div class="box">
             <div class="img-box">
-              <img src="images/p3.png" alt="">
+              <img src="public/images/p3.png" alt="">
               <a href="" class="add_cart_btn">
                 <span>
                   Add To Cart
@@ -110,7 +110,7 @@
         <div class="col-sm-6 col-lg-4">
           <div class="box">
             <div class="img-box">
-              <img src="images/p4.png" alt="">
+              <img src="public/images/p4.png" alt="">
               <a href="" class="add_cart_btn">
                 <span>
                   Add To Cart
@@ -139,7 +139,7 @@
         <div class="col-sm-6 col-lg-4">
           <div class="box">
             <div class="img-box">
-              <img src="images/p5.png" alt="">
+              <img src="public/images/p5.png" alt="">
               <a href="" class="add_cart_btn">
                 <span>
                   Add To Cart
@@ -168,7 +168,7 @@
         <div class="col-sm-6 col-lg-4">
           <div class="box">
             <div class="img-box">
-              <img src="images/p6.png" alt="">
+              <img src="public/images/p6.png" alt="">
               <a href="" class="add_cart_btn">
                 <span>
                   Add To Cart
@@ -197,7 +197,7 @@
         <div class="col-sm-6 col-lg-4">
           <div class="box">
             <div class="img-box">
-              <img src="images/p7.png" alt="">
+              <img src="public/images/p7.png" alt="">
               <a href="" class="add_cart_btn">
                 <span>
                   Add To Cart
@@ -226,7 +226,7 @@
         <div class="col-sm-6 col-lg-4">
           <div class="box">
             <div class="img-box">
-              <img src="images/p8.png" alt="">
+              <img src="public/images/p8.png" alt="">
               <a href="" class="add_cart_btn">
                 <span>
                   Add To Cart
@@ -255,7 +255,7 @@
         <div class="col-sm-6 col-lg-4">
           <div class="box">
             <div class="img-box">
-              <img src="images/p9.png" alt="">
+              <img src="public/images/p9.png" alt="">
               <a href="" class="add_cart_btn">
                 <span>
                   Add To Cart

@@ -44,7 +44,7 @@
         </div>
         <div class="col-md-6 px-0">
           <div class="img-box">
-            <img src="images/logoFooter.png" alt="">
+            <img src="public/images/logoFooter.png" alt="">
           </div>
         </div>
       </div>

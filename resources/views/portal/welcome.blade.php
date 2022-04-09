@@ -17,18 +17,18 @@
 
 
   <!-- bootstrap core css -->
-  <link rel="stylesheet" type="text/css" href="publicPath('css/bootstrap.css')" />
+  <link rel="stylesheet" type="text/css" href="public/css/bootstrap.css" />
 
   <!-- fonts style -->
   <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet"> <!-- range slider -->
 
   <!-- font awesome style -->
-  <link href="css/font-awesome.min.css" rel="stylesheet" />
+  <link href="public/css/font-awesome.min.css" rel="stylesheet" />
 
   <!-- Custom styles for this template -->
-  <link href="css/style.css" rel="stylesheet" />
+  <link href="public/css/style.css" rel="stylesheet" />
   <!-- responsive style -->
-  <link href="css/responsive.css" rel="stylesheet" />
+  <link href="public/css/responsive.css" rel="stylesheet" />
 
 </head>
 
@@ -83,7 +83,7 @@
           <nav class="navbar navbar-expand-lg custom_nav-container ">
             <a class="navbar-brand" href="{{route('inicio')}}">
               <span>
-                    <img class="d-block mx-auto mb-4" src="/images/logo.png" alt="" width="72" height="72">
+                    <img class="d-block mx-auto mb-4" src="public/images/logo.png" alt="" width="72" height="72">
               </span>
             </a>
 
@@ -137,7 +137,7 @@
                 </div>
                 <div class="col-md-6">
                   <div class="img-box">
-                    <img src="images/slider-img.png" alt="">
+                    <img src="public/images/slider-img.png" alt="">
                   </div>
                 </div>
               </div>
@@ -161,7 +161,7 @@
                 </div>
                 <div class="col-md-6">
                   <div class="img-box">
-                    <img src="images/slider-img.png" alt="">
+                    <img src="public/images/slider-img.png" alt="">
                   </div>
                 </div>
               </div>
@@ -185,7 +185,7 @@
                 </div>
                 <div class="col-md-6">
                   <div class="img-box">
-                    <img src="images/slider-img.png" alt="">
+                    <img src="public/images/slider-img.png" alt="">
                   </div>
                 </div>
               </div>
@@ -221,7 +221,7 @@
         <div class="col-sm-6 col-lg-4">
           <div class="box">
             <div class="img-box">
-              <img src="images/p1.png" alt="">
+              <img src="public/images/p1.png" alt="">
               <a href="" class="add_cart_btn">
                 <span>
                   Add To Cart
@@ -250,7 +250,7 @@
         <div class="col-sm-6 col-lg-4">
           <div class="box">
             <div class="img-box">
-              <img src="images/p2.png" alt="">
+              <img src="public/images/p2.png" alt="">
               <a href="" class="add_cart_btn">
                 <span>
                   Add To Cart
@@ -279,7 +279,7 @@
         <div class="col-sm-6 col-lg-4">
           <div class="box">
             <div class="img-box">
-              <img src="images/p3.png" alt="">
+              <img src="public/images/p3.png" alt="">
               <a href="" class="add_cart_btn">
                 <span>
                   Add To Cart
@@ -308,7 +308,7 @@
         <div class="col-sm-6 col-lg-4">
           <div class="box">
             <div class="img-box">
-              <img src="images/p4.png" alt="">
+              <img src="public/images/p4.png" alt="">
               <a href="" class="add_cart_btn">
                 <span>
                   Add To Cart
@@ -337,7 +337,7 @@
         <div class="col-sm-6 col-lg-4">
           <div class="box">
             <div class="img-box">
-              <img src="images/p5.png" alt="">
+              <img src="public/images/p5.png" alt="">
               <a href="" class="add_cart_btn">
                 <span>
                   Add To Cart
@@ -366,7 +366,7 @@
         <div class="col-sm-6 col-lg-4">
           <div class="box">
             <div class="img-box">
-              <img src="images/p6.png" alt="">
+              <img src="public/images/p6.png" alt="">
               <a href="" class="add_cart_btn">
                 <span>
                   Add To Cart
@@ -395,7 +395,7 @@
         <div class="col-sm-6 col-lg-4">
           <div class="box">
             <div class="img-box">
-              <img src="images/p7.png" alt="">
+              <img src="public/images/p7.png" alt="">
               <a href="" class="add_cart_btn">
                 <span>
                   Add To Cart
@@ -424,7 +424,7 @@
         <div class="col-sm-6 col-lg-4">
           <div class="box">
             <div class="img-box">
-              <img src="images/p8.png" alt="">
+              <img src="public/images/p8.png" alt="">
               <a href="" class="add_cart_btn">
                 <span>
                   Add To Cart
@@ -453,7 +453,7 @@
         <div class="col-sm-6 col-lg-4">
           <div class="box">
             <div class="img-box">
-              <img src="images/p9.png" alt="">
+              <img src="public/images/p9.png" alt="">
               <a href="" class="add_cart_btn">
                 <span>
                   Add To Cart
@@ -513,7 +513,7 @@
         </div>
         <div class="col-md-6 px-0">
           <div class="img-box">
-            <img src="images/about-img.jpg" alt="">
+            <img src="public/images/about-img.jpg" alt="">
           </div>
         </div>
       </div>
@@ -535,7 +535,7 @@
         <div class="col-md-4">
           <div class="box ">
             <div class="img-box">
-              <img src="images/w1.png" alt="">
+              <img src="public/images/w1.png" alt="">
             </div>
             <div class="detail-box">
               <h5>
@@ -550,7 +550,7 @@
         <div class="col-md-4">
           <div class="box ">
             <div class="img-box">
-              <img src="images/w2.png" alt="">
+              <img src="public/images/w2.png" alt="">
             </div>
             <div class="detail-box">
               <h5>
@@ -565,7 +565,7 @@
         <div class="col-md-4">
           <div class="box ">
             <div class="img-box">
-              <img src="images/w3.png" alt="">
+              <img src="public/images/w3.png" alt="">
             </div>
             <div class="detail-box">
               <h5>
@@ -615,7 +615,7 @@
                 </div>
                 <div class="client-id">
                   <div class="img-box">
-                    <img src="images/client.jpg" alt="">
+                    <img src="public/images/client.jpg" alt="">
                   </div>
                   <div class="name">
                     <h5>
@@ -647,7 +647,7 @@
                 </div>
                 <div class="client-id">
                   <div class="img-box">
-                    <img src="images/client.jpg" alt="">
+                    <img src="public/images/client.jpg" alt="">
                   </div>
                   <div class="name">
                     <h5>
@@ -679,7 +679,7 @@
                 </div>
                 <div class="client-id">
                   <div class="img-box">
-                    <img src="images/client.jpg" alt="">
+                    <img src="public/images/client.jpg" alt="">
                   </div>
                   <div class="name">
                     <h5>
@@ -722,7 +722,7 @@
             <h5>
               <a href="{{route('inicio')}}" class="navbar-brand">
                 <span>
-                  <img class="d-block mx-auto mb-4" src="/images/logoFooter.png" alt="" width="200" height="175">
+                  <img class="d-block mx-auto mb-4" src="public/images/logoFooter.png" alt="" width="200" height="175">
                 </span>
               </a>
             </h5>
@@ -830,11 +830,11 @@
   </footer>
   <!-- footer section -->
   <!-- jQery -->
-  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="public/js/jquery-3.4.1.min.js"></script>
   <!-- bootstrap js -->
-  <script src="js/bootstrap.js"></script>
+  <script src="public/js/bootstrap.js"></script>
   <!-- custom js -->
-  <script src="js/custom.js"></script>
+  <script src="public/js/custom.js"></script>
 
 
 </body>

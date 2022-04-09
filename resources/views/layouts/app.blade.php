@@ -17,18 +17,18 @@
 
 
   <!-- bootstrap core css -->
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <link rel="stylesheet" type="text/css" href="public/css/bootstrap.css" />
 
   <!-- fonts style -->
   <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet"> <!-- range slider -->
 
   <!-- font awesome style -->
-  <link href="css/font-awesome.min.css" rel="stylesheet" />
+  <link href="public/css/font-awesome.min.css" rel="stylesheet" />
 
   <!-- Custom styles for this template -->
-  <link href="css/style.css" rel="stylesheet" />
+  <link href="public/css/style.css" rel="stylesheet" />
   <!-- responsive style -->
-  <link href="css/responsive.css" rel="stylesheet" />
+  <link href="public/css/responsive.css" rel="stylesheet" />
 
 </head>
 
@@ -83,7 +83,7 @@
           <nav class="navbar navbar-expand-lg custom_nav-container ">
             <a class="navbar-brand" href="{{route('inicio')}}">
                 <span>
-                      <img class="d-block mx-auto mb-4" src="/images/logo.png" alt="" width="72" height="72">
+                      <img class="d-block mx-auto mb-4" src="public/images/logo.png" alt="" width="72" height="72">
                 </span>
               </a>
 
@@ -128,7 +128,7 @@
             <h5>
                 <a href="{{route('inicio')}}" class="navbar-brand">
                     <span>
-                      <img class="d-block mx-auto mb-4" src="/images/logoFooter.png" alt="" width="200" height="175">
+                      <img class="d-block mx-auto mb-4" src="public/images/logoFooter.png" alt="" width="200" height="175">
                     </span>
                   </a>
             </h5>
@@ -236,11 +236,11 @@
   <!-- footer section -->
 
   <!-- jQery -->
-  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="public/js/jquery-3.4.1.min.js"></script>
   <!-- bootstrap js -->
-  <script src="js/bootstrap.js"></script>
+  <script src="public/js/bootstrap.js"></script>
   <!-- custom js -->
-  <script src="js/custom.js"></script>
+  <script src="public/js/custom.js"></script>
 
 
 </body>

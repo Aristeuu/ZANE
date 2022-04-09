@@ -17,7 +17,7 @@
 
 
   <!-- bootstrap core css -->
-  <link rel="stylesheet" type="text/css" href="publicPath(css/bootstrap.css)" />
+  <link rel="stylesheet" type="text/css" href="publicPath('css/bootstrap.css')" />
 
   <!-- fonts style -->
   <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet"> <!-- range slider -->

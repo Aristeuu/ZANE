@@ -17,7 +17,7 @@
 
 
   <!-- bootstrap core css -->
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <link rel="stylesheet" type="text/css" href="publicPath(css/bootstrap.css)" />
 
   <!-- fonts style -->
   <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet"> <!-- range slider -->
@@ -94,14 +94,14 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav ">
                 <li class="nav-item active">
-                    <a class="nav-link" href="{{route('inicio')}}">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{{route('sobre')}}"> Sobre</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{{route('produtos')}}">Productos</a>
-                </li>
+                  <a class="nav-link" href="{{route('inicio')}}">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item {{( request()->is('sobre')) ? 'active' : ''}}">
+                  <a class="nav-link" href="{{route('sobre')}}"> Sobre</a>
+              </li>
+              <li class="nav-item {{( request()->is('produtos')) ? 'active' : ''}}">
+                  <a class="nav-link" href="{{route('produtos')}}">Produtos</a>
+              </li>
                 <li class="nav-item">
                   <a class="nav-link" href="why.html">Why Us</a>
                 </li>

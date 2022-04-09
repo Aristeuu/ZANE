@@ -93,13 +93,13 @@
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav ">
-                <li class="nav-item active">
+                <li class="nav-item {{( request()->is('inicio')) ? 'active' : ''}}">
                     <a class="nav-link" href="{{route('inicio')}}">Home <span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item {{( request()->is('sobre')) ? 'active' : ''}}">
                     <a class="nav-link" href="{{route('sobre')}}"> Sobre</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item {{( request()->is('produtos')) ? 'active' : ''}}">
                     <a class="nav-link" href="{{route('produtos')}}">Produtos</a>
                 </li>
                 <li class="nav-item">

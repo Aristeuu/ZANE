@@ -206,7 +206,7 @@
             <div class="box">
               <div class="img-box">
                 <img src="public/images/{{$item->foto}}" alt="">
-              <a href="#" class="add_cart_btn" data-toggle="modal" data-target="#modal-default{{$item->id}}">
+                  <a  class="add_cart_btn" data-toggle="modal" data-target="#modal-default{{$item->id}}">
                   <span>
                     Adquirir
                   </span>

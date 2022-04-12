@@ -200,7 +200,7 @@
         </h2>
       </div>
       <div class="row">
-        @if(isset($produtos))
+        @if($produtos->isNotEmpty())
           @foreach ($produtos as $item)
           <div class="col-sm-6 col-lg-4">
             <div class="box">

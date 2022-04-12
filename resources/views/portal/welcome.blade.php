@@ -119,78 +119,60 @@
     <section class="slider_section ">
       <div id="customCarousel1" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="container ">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="detail-box">
-                    <h1>
-                      Welcome to our shop
-                    </h1>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste quam velit saepe dolorem deserunt quo quidem ad optio.
-                    </p>
-                    <a href="">
-                      Read More
-                    </a>
+          @if($banners->isNotEmpty())
+              @foreach ($banners as $banner)
+                  <div class="carousel-item active">
+                    <div class="container ">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="detail-box">
+                            <h1>
+                                {{$banner->titulo}}
+                            </h1>
+                            <p>
+                                {!!$banner->descricao!!}
+                            </p>
+                            <!--a href="#">
+                              Read More
+                            </a-->
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="img-box">
+                            <img src="public/images/{{$banner->foto}}" alt="">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>                   
+              @endforeach
+
+          @else
+            <div class="carousel-item active">
+              <div class="container ">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="detail-box">
+                      <h1>
+                        Welcome to our shop
+                      </h1>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste quam velit saepe dolorem deserunt quo quidem ad optio.
+                      </p>
+                      <a href="">
+                        Read More
+                      </a>
+                    </div>
                   </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="img-box">
-                    <img src="public/images/slider-img.png" alt="">
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="container ">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="detail-box">
-                    <h1>
-                      Welcome to our shop
-                    </h1>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste quam velit saepe dolorem deserunt quo quidem ad optio.
-                    </p>
-                    <a href="">
-                      Read More
-                    </a>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="img-box">
-                    <img src="public/images/slider-img.png" alt="">
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="container ">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="detail-box">
-                    <h1>
-                      Welcome to our shop
-                    </h1>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste quam velit saepe dolorem deserunt quo quidem ad optio.
-                    </p>
-                    <a href="">
-                      Read More
-                    </a>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="img-box">
-                    <img src="public/images/slider-img.png" alt="">
+                  <div class="col-md-6">
+                    <div class="img-box">
+                      <img src="public/images/slider-img.png" alt="">
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
+            </div> 
+          @endif                   
         </div>
         <div class="carousel_btn_box">
           <a class="carousel-control-prev" href="#customCarousel1" role="button" data-slide="prev">
@@ -214,10 +196,96 @@
     <div class="container">
       <div class="heading_container heading_center">
         <h2>
-          Our Products
+          Nossos Produtos
         </h2>
       </div>
       <div class="row">
+        @if(isset($produtos))
+          @foreach ($produtos as $item)
+          <div class="col-sm-6 col-lg-4">
+            <div class="box">
+              <div class="img-box">
+                <img src="public/images/{{$item->foto}}" alt="">
+              <a href="#" class="add_cart_btn" data-toggle="modal" data-target="#modal-default{{$item->id}}">
+                  <span>
+                    Adquirir
+                  </span>
+                </a>
+              </div>
+
+                    
+        <div class="modal fade" id="modal-default">
+          <div class="modal-dialog modal-sm">
+          <div class="modal-content">
+              <div class="modal-header">
+              <h4 class="modal-title">Onde receberá a sua encomenda?</h4>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+              </button>
+              </div>
+                    <div class="modal-body">
+                            <!-- form start -->
+                    <form id="ctedForm" action="" method="post" enctype="multipart/form-data" id="formLocal{{$item->id}}">
+                        @csrf
+                        <div class="card-body">
+                          <div class="form-group">
+                            <select name="local" id="idLocal">
+                              <option value="">Escolher Destino</option>
+                              @foreach ($locais as $item)
+                                <option value="{{$item->id}}">{{$item->local}} - {{$item->valor}}</option>
+                              @endforeach
+
+                            </select>
+                          </div>                                      
+                            
+                          <div class="form-group">
+                            <label for="titulo">Produto</label>
+                          <input type="hidden" name="produto" value="{{$item->id}}" class="form-control" id="titulo">
+                          </div>  
+                                                                
+                        </div>
+                      <!-- /.card-body -->                            
+                      </form>
+                    </div>
+                    <div class="modal-footer justify-content-between">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary" form="formLocal{{$item->id}}">Save</button>
+                    </div>
+                </div>
+                <!-- /.modal-content -->
+                </div>
+                <!-- /.modal-dialog -->
+            </div>
+            <!-- /.modal -->
+
+              <div class="detail-box">
+                <h5>
+                  {{$item->nome}}
+                </h5>
+                <div class="product_info">
+                  <h5>
+                      @if($item->desconto != null)
+                        <s>{{number_format($item->preco, 2)}} Kz</s>
+                           {{number_format($item->preco - (($item->desconto/100)*$item->preco) ,2)}} <span>Kz</span> 
+                      @else
+                           {{number_format($item->preco, 2)}} <span>Kz</span> 
+                      @endif  
+                  </h5>
+                  <div class="star_container">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+          @endforeach
+        
+        @else
         <div class="col-sm-6 col-lg-4">
           <div class="box">
             <div class="img-box">
@@ -479,10 +547,11 @@
             </div>
           </div>
         </div>
+        @endif
       </div>
       <div class="btn_box">
-        <a href="" class="view_more-link">
-          View More
+      <a href="{{route('produtos.show')}}" class="view_more-link">
+          Ver mais
         </a>
       </div>
     </div>
@@ -539,7 +608,7 @@
             </div>
             <div class="detail-box">
               <h5>
-                Fast Delivery
+                Entrega Rápida
               </h5>
               <p>
                 variations of passages of Lorem Ipsum available
@@ -569,7 +638,7 @@
             </div>
             <div class="detail-box">
               <h5>
-                Best Quality
+                Melhor Quality
               </h5>
               <p>
                 variations of passages of Lorem Ipsum available
@@ -590,13 +659,46 @@
     <div class="container">
       <div class="heading_container heading_center">
         <h2>
-          What Says Our Customers
+          Depoimentos
         </h2>
       </div>
     </div>
     <div class="client_container ">
       <div id="carouselExample2Controls" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
+          @if(isset($depoimentos))
+            @foreach ($depoimentos as $item)
+                  <div class="carousel-item active">
+                    <div class="container">
+                      <div class="box">
+                        <div class="detail-box">
+                          <p>
+                            <i class="fa fa-quote-left" aria-hidden="true"></i>
+                          </p>
+                          <p>
+                              {!!$item->texto!!}
+                          </p>
+                        </div>
+                        <div class="client-id">
+                          <div class="img-box">
+                            <img src="public/images/{{$item->foto}}" alt="">
+                          </div>
+                          <div class="name">
+                            <h5>
+                                {{$item->nome}}
+                            </h5>
+                            <h6>                              
+                            </h6>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+  
+            @endforeach
+          
+          @else
+
           <div class="carousel-item active">
             <div class="container">
               <div class="box">
@@ -693,6 +795,7 @@
               </div>
             </div>
           </div>
+          @endif
         </div>
         <div class="carousel_btn-box">
           <a class="carousel-control-prev" href="#carouselExample2Controls" role="button" data-slide="prev">

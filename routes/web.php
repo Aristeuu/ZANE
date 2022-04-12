@@ -24,3 +24,7 @@ Route::get('/sobre', function(){
 Route::get('/produtos', function(){
     return view('portal.produtos');
 })->name('produtos');
+
+Route::get('/produtos/show', function(){
+    return view('portal.produtos');
+})->name('produtos.show');

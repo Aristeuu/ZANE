@@ -13,6 +13,7 @@ class HomeController extends Controller
     public function index()
     {
         $banners = Banner::getAll();
+        
         $produtos = Produtos::getLAST();
         $depoimentos = Depoimentos::getAll();
         $locais      = Locais::getAll(); 

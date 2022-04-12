@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ProdutosController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,9 +15,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('portal.welcome');
-})->name('inicio');
+Route::get('/', [HomeController::class, 'index'])->name('inicio');
 
 Route::get('/sobre', function(){
     return view('portal.sobre');

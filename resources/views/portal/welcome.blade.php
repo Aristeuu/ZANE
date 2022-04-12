@@ -214,7 +214,7 @@
               </div>
 
                     
-        <div class="modal fade" id="modal-default">
+        <div class="modal fade" id="modal-default{{$item->id}}">
           <div class="modal-dialog modal-sm">
           <div class="modal-content">
               <div class="modal-header">

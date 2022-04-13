@@ -19,4 +19,9 @@ class HomeController extends Controller
         $locais      = Locais::getAll(); 
         return view('portal.welcome',compact('banners','produtos','depoimentos','locais'));
     }
+
+    public function teste()
+    {
+        dd('ok');
+    }
 }

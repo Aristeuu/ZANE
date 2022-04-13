@@ -17,6 +17,8 @@ use App\Http\Controllers\ProdutosController;
 
 Route::get('/', [HomeController::class, 'index'])->name('inicio');
 
+Route::post('/teste',[HomeController::class, 'teste'])->name('teste');
+
 Route::get('/sobre', function(){
     return view('portal.sobre');
 })->name('sobre');

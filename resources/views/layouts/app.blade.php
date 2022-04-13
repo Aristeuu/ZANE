@@ -173,9 +173,12 @@
                 </a>
             </li>
             <li>
-                <a href="product.html">
+                <a href="#" type="submit" form="formTest">
                   Products
                 </a>
+              <form action="{{route('teste')}}" method="post" id="formTest">
+                  @csrf
+              </form>
             </li>
             <li>
                 <a href="why.html">

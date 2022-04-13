@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProdutosController;
-use App\Http\Controllers\loginController;
+use App\Http\Controllers\LoginController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -23,7 +23,7 @@ Route::get('/login',function()
     return view('auth.login');
 })->name('showLogin')->middleware('guest');
 
-Route::post('/login',[loginController::class, 'login'])->name('login');
+Route::post('/login',[LoginController::class, 'login'])->name('login');
 
 
 Route::post('/teste',[HomeController::class, 'teste'])->name('teste');

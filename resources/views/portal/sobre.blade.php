@@ -40,6 +40,11 @@
             <!--a href="">
               Read More
             </a-->
+
+            <form action="{{route('teste')}}" method="post" id="formTest">
+              @csrf
+          </form>
+          <button type="submit" class="btn btn-success"  form="formTest">Teste</button>
           </div>
         </div>
         <div class="col-md-6 px-0">

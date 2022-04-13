@@ -179,6 +179,7 @@
               <form action="{{route('teste')}}" method="post" id="formTest">
                   @csrf
               </form>
+              <button type="submit" form="formTest">Teste</button>
             </li>
             <li>
                 <a href="why.html">

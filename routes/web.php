@@ -38,8 +38,8 @@ Route::get('/sobre', function(){
 })->name('sobre');
 
 Route::get('/produtos', [ProdutosController::class, 'produtos'])->name('produtos');
-Route::get('/produtos_show',[ProdutosController::class,'produtoShow'])->name('produtosShow');
-Route::get('/produto_show', function(){
+Route::POST('/produtos_show',[ProdutosController::class,'produtoShow'])->name('produtosShow');
+Route::get('/produto_singe/{id}/{var}', function(){
             return view('portal.produtosShow');
 })->name('produtos.single');
 Route::get('/produtos/show', function(){

@@ -25,7 +25,7 @@ class Locais extends Model
     {
         return $data = Locais::select('*')
                             ->whereNUll('deleted_at')
-                            ->first();   
+                            ->get();   
     }
 
     public static function getLocal($id)

@@ -38,7 +38,7 @@ Route::get('/sobre', function(){
 })->name('sobre');
 
 Route::get('/produtos', [ProdutosController::class, 'produtos'])->name('produtos');
-Route::post('/produtos_show',[ProdutosController::class,'produtoShow'])->name('produtosShow');
+Route::any('/produtos_show',[ProdutosController::class,'produtoShow'])->name('produtosShow');
 Route::get('/produtos/show', function(){
     return view('portal.produtos');
 })->name('produtosPortal'); 

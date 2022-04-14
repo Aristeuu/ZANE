@@ -102,12 +102,12 @@
                 <li class="nav-item {{( request()->is('produtos')) ? 'active' : ''}}">
                     <a class="nav-link" href="{{route('produtos')}}">Produtos</a>
                 </li>
-                <li class="nav-item">
+                <!--li class="nav-item">
                   <a class="nav-link" href="why.html">Why Us</a>
-                </li>
-                <li class="nav-item">
+                </li-->
+                <!--li class="nav-item">
                   <a class="nav-link" href="testimonial.html">Testimonial</a>
-                </li>
+                </li-->
               </ul>
             </div>
           </nav>
@@ -173,20 +173,20 @@
                 </a>
             </li>
             <li>
-                <a href="#" type="submit" form="formTest">
+                <a href="{{route('produtos')}}">
                   Products
                 </a>             
             </li>
-            <li>
+            <!--li>
                 <a href="why.html">
                   Why Us
                 </a>
-            </li>
-            <li>
+            </li-->
+            <!--li>
                 <a href="testimonial.html">
                   Testimonial
                 </a>
-            </li>
+            </li-->
             </ul>
           </div>
         </div>

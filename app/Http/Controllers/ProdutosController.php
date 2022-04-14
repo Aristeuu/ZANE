@@ -40,13 +40,13 @@ class ProdutosController extends Controller
         //return view('portal.produtosShow',compact('produto','local'));
 
     }
-    public function produtoSingle(Request $request,$prod,$id)
+    public function produtoSingle($prod,$id)
     {
         $id_local = $request->local;
         $id_produto = $request->produto;
 
         $produto = Produtos::getProduto($id_produto);
-        //dd($produto);
+        dd($produto);
         $local   = Locais::getLocal($id_local);
 
         return view('portal.produtosShow',compact('produto','local'));

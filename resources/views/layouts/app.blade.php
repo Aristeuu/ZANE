@@ -8,7 +8,7 @@
   <!-- Mobile Metas -->
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <!-- Site Metas -->
-  <link rel="icon" href="images/fevicon.png" type="image/gif" />
+  <link rel="icon" href="/images/fevicon.png" type="image/gif" />
   <meta name="keywords" content="" />
   <meta name="description" content="" />
   <meta name="author" content="" />
@@ -17,7 +17,7 @@
 
 
   <!-- bootstrap core css -->
-  <link rel="stylesheet" type="text/css" href="public/css/bootstrap.css" />
+  <link rel="stylesheet" type="/text/css" href="public/css/bootstrap.css" />
 
   <!-- fonts style -->
   <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet"> <!-- range slider -->
@@ -83,7 +83,7 @@
           <nav class="navbar navbar-expand-lg custom_nav-container ">
             <a class="navbar-brand" href="{{route('inicio')}}">
                 <span>
-                      <img class="d-block mx-auto mb-4" src="public/images/logo.png" alt="" width="72" height="72">
+                      <img class="d-block mx-auto mb-4" src="/public/images/logo.png" alt="" width="72" height="72">
                 </span>
               </a>
 

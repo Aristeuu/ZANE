@@ -3,33 +3,21 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
+use App\Models\Usuarios;
 
-
-class LoginController extends Controller
+class UsuariosController extends Controller
 {
     /**
      * Display a listing of the resource.
-     *@param  \Illuminate\Http\Request  $request
+     *
      * @return \Illuminate\Http\Response
      */
-    public function login(Request $request)
+    public function index()
     {
-        //dd('ok');
-        $credentials = $request->validate([
-            'email' => ['required', 'email'],
-            'password' => ['required'],
-            
-        ]);
-
-        if (Auth::attempt($credentials)) {
-            $request->session()->regenerate();
-            return redirect()->intended('home');
-        }
-        $request->session()->flash('alert-danger','Erro na operação');
-        return redirect()->back();
-       
-
+        //
+        $data = Usuarios::getAll();
+        return view('cms.usuarios',compact('data'));
+        
     }
 
     /**

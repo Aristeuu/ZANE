@@ -5,6 +5,11 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProdutosController;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\DepoimentosController;
+use App\Http\Controllers\LocaisController;
+use App\Http\Controllers\UsuariosController;
+use App\Http\Controllers\BannerController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -32,13 +37,11 @@ Route::get('/sobre', function(){
     return view('portal.sobre');
 })->name('sobre');
 
-Route::get('/produtos', function(){
-    return view('portal.produtos');
-})->name('produtos');
+Route::get('/produtos', [ProdutosController::class, 'produtos'])->name('produtos');
 
 Route::get('/produtos/show', function(){
     return view('portal.produtos');
-})->name('produtos.show');
+})->name('produtosPortal'); 
 
 Route::middleware(['auth'])->group(function(){
 
@@ -76,8 +79,8 @@ Route::middleware(['auth'])->group(function(){
     Route::get('logout',[HomeController::class, 'logout'])->name('logout');
     
     Route::get('/registar', function(){
-        Auth()->logout();
-        return view('welcome');
+        
+        return view('cms.register');
     })->name('showRegister');
 
 });

@@ -33,10 +33,11 @@ class ProdutosController extends Controller
         $id_produto = $request->produto;
 
         $produto = Produtos::getProduto($id_produto);
+        dd($produto);
         $local   = Locais::getLocal($id_local);
 
         return view('portal.produtosShow',compact('produto','local'));
-        
+
     }
 
     /**

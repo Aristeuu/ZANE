@@ -8,31 +8,31 @@
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="public/admin/plugins/fontawesome-free/css/all.min.css">
+  <link rel="stylesheet" href="/public/admin/plugins/fontawesome-free/css/all.min.css">
   <!-- Ionicons -->
   <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
   <!-- Tempusdominus Bootstrap 4 -->
-  <link rel="stylesheet" href="public/admin/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+  <link rel="stylesheet" href="/public/admin/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
   <!-- iCheck -->
-  <link rel="stylesheet" href="public/admin/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+  <link rel="stylesheet" href="/public/admin/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
   <!-- JQVMap -->
-  <link rel="stylesheet" href="public/admin/plugins/jqvmap/jqvmap.min.css">
+  <link rel="stylesheet" href="/public/admin/plugins/jqvmap/jqvmap.min.css">
   <!-- Theme style -->
-  <link rel="stylesheet" href="public/admin/dist/css/adminlte.min.css">
+  <link rel="stylesheet" href="/public/admin/dist/css/adminlte.min.css">
   <!-- overlayScrollbars -->
-  <link rel="stylesheet" href="public/admin/plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+  <link rel="stylesheet" href="/public/admin/plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
   <!-- Daterange picker -->
-  <link rel="stylesheet" href="public/admin/plugins/daterangepicker/daterangepicker.css">
+  <link rel="stylesheet" href="/public/admin/plugins/daterangepicker/daterangepicker.css">
   <!-- summernote -->
-  <link rel="stylesheet" href="public/admin/plugins/summernote/summernote-bs4.min.css">
+  <link rel="stylesheet" href="/public/admin/plugins/summernote/summernote-bs4.min.css">
 
   <!--Toastr-alert-->
   
-<link rel="stylesheet" href="public/admin/plugins/codemirror/theme/monokai.css">
+<link rel="stylesheet" href="/public/admin/plugins/codemirror/theme/monokai.css">
 
-<link rel="stylesheet" href="public/admin/plugins/codemirror/codemirror.css">
-<link rel="stylesheet" href="public/admin/plugins/sweetalert2-theme-bootstrap-4/bootstrap-4.min.css">
-<link rel="stylesheet" href="public/admin/plugins/toastr/toastr.min.css">
+<link rel="stylesheet" href="/public/admin/plugins/codemirror/codemirror.css">
+<link rel="stylesheet" href="/public/admin/plugins/sweetalert2-theme-bootstrap-4/bootstrap-4.min.css">
+<link rel="stylesheet" href="/public/admin/plugins/toastr/toastr.min.css">
 
 
   @stack('style')
@@ -43,7 +43,7 @@
 
   <!-- Preloader -->
   <div class="preloader flex-column justify-content-center align-items-center">
-    <img class="animation__shake" src="public/admin/dist/img/AdminLTELogo.png" alt="AdminLTELogo" height="60" width="60">
+    <img class="animation__shake" src="/public/admin/dist/img/AdminLTELogo.png" alt="AdminLTELogo" height="60" width="60">
   </div>
 
   <!-- Navbar -->
@@ -100,7 +100,7 @@
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
     <a href="{{route('home')}}" class="brand-link">
-      <img src="public/admin/dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+      <img src="/public/admin/dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
       <span class="brand-text font-weight-light">Admin</span>
     </a>
 
@@ -109,7 +109,7 @@
       <!-- Sidebar user panel (optional) -->
       <div class="user-panel mt-3 pb-3 mb-3 d-flex">
         <div class="image">
-          <img src="public/admin/dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+          <img src="/public/admin/dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
           <a href="#" class="d-block">Admin</a>

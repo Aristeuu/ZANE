@@ -236,11 +236,11 @@
   <!-- footer section -->
 
   <!-- jQery -->
-  <script src="public/js/jquery-3.4.1.min.js"></script>
+  <script src="/public/js/jquery-3.4.1.min.js"></script>
   <!-- bootstrap js -->
-  <script src="public/js/bootstrap.js"></script>
+  <script src="/public/js/bootstrap.js"></script>
   <!-- custom js -->
-  <script src="public/js/custom.js"></script>
+  <script src="/public/js/custom.js"></script>
 
 
 </body>

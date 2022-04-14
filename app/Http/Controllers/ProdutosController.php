@@ -29,6 +29,13 @@ class ProdutosController extends Controller
 
     public function produtoShow(Request $request)
     {
+        $id_local = $request->local;
+        $id_produto = $request->produto;
+
+        $produto = Produtos::getProduto($id_produto);
+        $local   = Locais::getLocal($id_local);
+
+        return view('portal.produtosShow',compact('produto','local'));
         
     }
 

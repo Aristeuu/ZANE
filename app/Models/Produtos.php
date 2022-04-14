@@ -28,4 +28,11 @@ class Produtos extends Model
                             ->orderBy('id','desc')
                             ->paginate(5);
     }
+    public static function getProduto($id)
+    {
+        return $data = Produtos::select('*')
+                                ->whereNUll('deleted_at')
+                                ->where('id',$id)
+                                ->get();
+    }
 }

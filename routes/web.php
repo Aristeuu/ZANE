@@ -39,9 +39,7 @@ Route::get('/sobre', function(){
 
 Route::get('/produtos', [ProdutosController::class, 'produtos'])->name('produtos');
 Route::POST('/produtos_show',[ProdutosController::class,'produtoShow'])->name('produtosShow');
-Route::get('/produto_singe/{id}/{var}', function(){
-            return view('portal.produtosShow');
-})->name('produtos.single');
+Route::get('/produto_singe/{id}/{var}', [ProdutosController::class,'produtoSingle'])->name('produtos.single');
 Route::get('/produtos/show', function(){
     return view('portal.produtos');
 })->name('produtosPortal'); 

@@ -23,12 +23,12 @@
   <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet"> <!-- range slider -->
 
   <!-- font awesome style -->
-  <link href="public/css/font-awesome.min.css" rel="stylesheet" />
+  <link href="/public/css/font-awesome.min.css" rel="stylesheet" />
 
   <!-- Custom styles for this template -->
-  <link href="public/css/style.css" rel="stylesheet" />
+  <link href="/public/css/style.css" rel="stylesheet" />
   <!-- responsive style -->
-  <link href="public/css/responsive.css" rel="stylesheet" />
+  <link href="/public/css/responsive.css" rel="stylesheet" />
 
 </head>
 
@@ -83,7 +83,7 @@
           <nav class="navbar navbar-expand-lg custom_nav-container ">
             <a class="navbar-brand" href="{{route('inicio')}}">
               <span>
-                    <img class="d-block mx-auto mb-4" src="public/images/logo.png" alt="" width="72" height="72">
+                    <img class="d-block mx-auto mb-4" src="/public/images/logo.png" alt="" width="72" height="72">
               </span>
             </a>
 
@@ -139,7 +139,7 @@
                         </div>
                         <div class="col-md-6">
                           <div class="img-box">
-                            <img src="public/images/{{$banner->foto}}" alt="">
+                            <img src="/public/images/{{$banner->foto}}" alt="">
                           </div>
                         </div>
                       </div>
@@ -166,7 +166,7 @@
                   </div>
                   <div class="col-md-6">
                     <div class="img-box">
-                      <img src="public/images/slider-img.png" alt="">
+                      <img src="/public/images/slider-img.png" alt="">
                     </div>
                   </div>
                 </div>
@@ -205,7 +205,7 @@
           <div class="col-sm-6 col-lg-4">
             <div class="box">
               <div class="img-box">
-                <img src="public/images/{{$item->foto}}" alt="">
+                <img src="/public/images/{{$item->foto}}" alt="">
                   <a  class="add_cart_btn" data-toggle="modal" data-target="#modal-default{{$item->id}}">
                   <span>
                     Adquirir
@@ -289,7 +289,7 @@
         <div class="col-sm-6 col-lg-4">
           <div class="box">
             <div class="img-box">
-              <img src="public/images/p1.png" alt="">
+              <img src="/public/images/p1.png" alt="">
               <a href="" class="add_cart_btn">
                 <span>
                   Add To Cart
@@ -347,7 +347,7 @@
         <div class="col-sm-6 col-lg-4">
           <div class="box">
             <div class="img-box">
-              <img src="public/images/p3.png" alt="">
+              <img src="/public/images/p3.png" alt="">
               <a href="" class="add_cart_btn">
                 <span>
                   Add To Cart

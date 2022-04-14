@@ -23,7 +23,7 @@
             <div class="col-sm-6 col-lg-4">
               <div class="box">
                 <div class="img-box">
-                <img src="public/images/{{$produto->foto}}" alt="">                    
+                <img src="/public/images/{{$produto->foto}}" alt="">                    
                 </div>                
                 <div class="detail-box">                  
                   

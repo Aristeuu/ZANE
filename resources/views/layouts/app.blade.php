@@ -23,12 +23,12 @@
   <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet"> <!-- range slider -->
 
   <!-- font awesome style -->
-  <link href="public/css/font-awesome.min.css" rel="stylesheet" />
+  <link href="/public/css/font-awesome.min.css" rel="stylesheet" />
 
   <!-- Custom styles for this template -->
-  <link href="public/css/style.css" rel="stylesheet" />
+  <link href="/public/css/style.css" rel="stylesheet" />
   <!-- responsive style -->
-  <link href="public/css/responsive.css" rel="stylesheet" />
+  <link href="/public/css/responsive.css" rel="stylesheet" />
 
 </head>
 
@@ -128,7 +128,7 @@
             <h5>
                 <a href="{{route('inicio')}}" class="navbar-brand">
                     <span>
-                      <img class="d-block mx-auto mb-4" src="public/images/logoFooter.png" alt="" width="200" height="175">
+                      <img class="d-block mx-auto mb-4" src="/public/images/logoFooter.png" alt="" width="200" height="175">
                     </span>
                   </a>
             </h5>

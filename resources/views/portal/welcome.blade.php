@@ -225,7 +225,7 @@
               </div>
                     <div class="modal-body">
                             <!-- form start -->
-                    <form action="" method="post" enctype="multipart/form-data" id="formLocal{{$item->id}}">
+                    <form action="{{route('produtosShow')}}" method="GET" enctype="multipart/form-data" id="formLocal{{$item->id}}">
                         @csrf
                         <div class="card-body">
                           <div class="form-group">

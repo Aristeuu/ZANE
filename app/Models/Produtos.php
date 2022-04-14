@@ -33,6 +33,6 @@ class Produtos extends Model
         return $data = Produtos::select('*')
                                 ->whereNUll('deleted_at')
                                 ->where('id',$id)
-                                ->fisrt();
+                                ->first();
     }
 }

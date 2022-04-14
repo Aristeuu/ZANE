@@ -550,7 +550,7 @@
         @endif
       </div>
       <div class="btn_box">
-      <a href="{{route('produtos.show')}}" class="view_more-link">
+      <a href="{{route('produtos')}}" class="view_more-link">
           Ver mais
         </a>
       </div>

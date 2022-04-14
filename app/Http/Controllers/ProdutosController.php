@@ -42,8 +42,8 @@ class ProdutosController extends Controller
     }
     public function produtoSingle($prod,$id)
     {
-        $id_local = $request->local;
-        $id_produto = $request->produto;
+        $id_local = $id;
+        $id_produto = $prod;
 
         $produto = Produtos::getProduto($id_produto);
         

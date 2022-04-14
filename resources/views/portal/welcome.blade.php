@@ -875,14 +875,14 @@
                 </a>
               </li>
               <li>
-                <a href="why.html">
+                <!--a href="why.html">
                   Why Us
-                </a>
+                </a-->
               </li>
               <li>
-                <a href="testimonial.html">
+                <!--a href="testimonial.html">
                   Testimonial
-                </a>
+                </a-->
               </li>
             </ul>
           </div>

@@ -30,7 +30,7 @@ class Locais extends Model
 
     public static function getLocal($id)
     {
-        return $data = Local::select('*')
+        return $data = Locais::select('*')
                             ->whereNUll('deleted_at')
                             ->where('id',$id)
                             ->first();

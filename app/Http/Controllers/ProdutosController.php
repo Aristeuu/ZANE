@@ -19,7 +19,7 @@ class ProdutosController extends Controller
         return view('cms.produtos',compact('data'));
     }
 
-    public function produto()
+    public function produtos()
     {
         $data = Produtos::getAll();
         $locais = Locais::get();

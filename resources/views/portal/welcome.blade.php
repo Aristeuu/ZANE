@@ -231,7 +231,7 @@
                           <div class="form-group">
                             <select name="local" id="idLocal">
                               <option value="">Escolher Destino</option>
-                              @foreach ($locais as $item)
+                              @foreach ($locais as $local)
                                 <option value="{{$item->id}}">{{$item->local}} - {{number_format($item->preco,2)}} Kz</option>
                               @endforeach
 

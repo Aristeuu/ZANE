@@ -10,7 +10,7 @@
 @push('body')
     
     
-<section class="about_section">
+<section class="product_section layout_padding">
     <div class="container-fluid  ">
       <div class="row">
         <div class="col-md-5 ml-auto">
@@ -45,7 +45,7 @@
         </div>
         <div class="col-md-6 px-0">
           <div class="img-box">
-            <img src="public/images/{{$produto->foto}}" alt="">
+            <img src="/public/images/{{$produto->foto}}" alt="">
           </div>
         </div>
       </div>

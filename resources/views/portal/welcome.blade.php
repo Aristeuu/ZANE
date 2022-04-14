@@ -232,7 +232,7 @@
                             <select name="local" id="idLocal">
                               <option value="">Escolher Destino</option>
                               @foreach ($locais as $local)
-                                <option value="{{$item->id}}">{{$item->local}} - {{number_format($item->preco,2)}} Kz</option>
+                                <option value="{{$local->id}}">{{$local->local}} - {{number_format($local->preco,2)}} Kz</option>
                               @endforeach
 
                             </select>
